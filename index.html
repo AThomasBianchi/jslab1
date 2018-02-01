@@ -2,10 +2,68 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <script src="oopscript.js"></script>
+    <!-- <script src="oopscript.js"></script> -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
     <title></title>
   </head>
   <body>
 
+    <div id="start">
+      <button id="startButton">Start The Game</button>
+    </div>
+
+    <div id="battle" class="hidden">
+      <div class="actions">
+        <button id="attackButton">Attack</button>
+        <button id="healButton">Heal</button>
+        <button id="quitButton">Quit</button>
+      </div>
+      <div class="messages">
+        <p id="message">Messages will go here</p>
+        <p id="message2"></p>
+      </div>
+      <div class="healthBars">
+        <div class="player vertical">
+          <h1 class="barLabel"> Player Stats </h1>
+          <div class="bars">
+            <div class="bar">
+              <h6>Player</h6>
+              <p id="playerName"></p>
+            </div>
+            <div class="bar">
+              <h6>Health</h6>
+              <progress id="playerHealth" value="40" max="40"></progress>
+            </div>
+            <div class="bar">
+              <h6>Heal Count</h6>
+              <progress id="playerHeals" value="0" max="2"></progress>
+            </div>
+            <div class="bar">
+              <h6>Wins</h6>
+              <progress  id="playerWins" value="0" max="3"></progress>
+            </div>
+          </div>
+        </div>
+        <div class="Grant vertical">
+          <h1 class="barLabel"> Enemy Stats </h1>
+          <div class="bars">
+            <div id="enemyName" class="bar">
+              <h6>Mighty Chicken</h6>
+              <p>Grant</p>
+            </div>
+            <div class="bar">
+              <h6>Health</h6>
+              <progress id="grantHealth" value="10" max="10"></progress>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="end" class="hidden">
+      <p id="finalMessage">End Message Goes Here</p>
+    </div>
+
+  <script src="eventscript.js"></script>
   </body>
 </html>

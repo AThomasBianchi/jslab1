@@ -1,0 +1,89 @@
+.hidden {
+  display: none;
+}
+
+body {
+  background-color: LightBlue;
+}
+
+button {
+  height: 175px;
+  width: 250px;
+  color: white;
+  background-color: teal;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.messages {
+  height: 60px;
+}
+
+#start button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.messages p {
+  text-align: center;
+}
+
+.healthBars {
+  border: 2px solid black;
+  width: 85%;
+  margin: 0px auto;
+}
+
+/* .vertical div {
+  display: inline-block;
+} */
+
+.actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bars {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bar {
+  flex-basis: 20%;
+}
+
+.barLabel {
+  display: block;
+  text-align: center;
+}
+
+.bar p{
+  line-height: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.Grant {
+  margin-bottom: 20px;
+}
+
+progress {
+  width: 85%;
+  height: 20px;
+  transition: value 2s;
+  -webkit-appearance: none;
+  border: none;
+}
+
+#finalMessage {
+  font-size: 40px;
+  text-align: center;
+  margin-top: 30px auto;
+}
+
+h6 {
+  font-size: 18px;
+}
