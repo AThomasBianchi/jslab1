@@ -1,3 +1,5 @@
+(function() {
+
 var user = {
   health: 40,
   healsRemaining: 2,
@@ -127,3 +129,5 @@ function startCombat() {
     endScreen();
   }
 }
+
+})();
